@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Your Future | Arizona State University"
+  },
+  "nav": {
+    "siteTitle": "Your future",
+    "parentOrg": "",
+    "parentOrgUrl": "",
+    "logo": {
+      "src": "https://yourfuture.asu.edu/profiles/contrib/webspark/modules/asu_brand/node_modules/@asu/component-header-footer/dist/assets/img/arizona-state-university-logo-vertical.png",
+      "alt": "Arizona State University",
+      "href": "/",
+      "mobileSrc": "https://yourfuture.asu.edu/profiles/contrib/webspark/modules/asu_brand/node_modules/@asu/component-header-footer/dist/assets/img/arizona-state-university-logo-vertical.png"
+    },
+    "items": []
+  },
+  "hero": {
+    "backgroundImage": "https://yourfuture.asu.edu/sites/g/files/litvpz3146/files/2024-03/get-ready-for-asu.jpg",
+    "title": "An incredible experience awaits you at ASU",
+    "subtitle": "Design a personalized college experience",
+    "buttons": [
+      { "label": "Request info", "href": "#", "color": "gold" },
+      { "label": "Apply", "href": "#", "color": "gold" }
+    ]
+  },
+  "rankings": [
+    {
+      "heading": "#1 in the U.S. for innovation",
+      "description": "ahead of MIT and Stanford – U.S. News & World Report, 2016-2026"
+    },
+    {
+      "heading": "#1 in the U.S. for global impact",
+      "description": "ahead of Michigan State, Penn State and MIT – Times Higher Education, 2020-2024"
+    },
+    {
+      "heading": "#2 in the U.S. for employability",
+      "description": "among public universities ahead of Michigan and Purdue – U.S. News & World Report, 2026"
+    },
+    {
+      "heading": "#3 in the U.S. for first-year experiences",
+      "description": "among public universities ahead of Stanford, Harvard and Yale – U.S. News & World Report, 2025"
+    }
+  ],
+  "topoSection": {
+    "highlightedText": "Make your college experience what you want it to be",
+    "remainingText": ", and continue on the path to who you're becoming.",
+    "subtext": "Take the quizzes below and use the results to get an idea of what your college experience might be like."
+  },
+  "studyHero": {
+    "backgroundImage": "https://yourfuture.asu.edu/sites/default/files/2024-03/what-do-you-want-to-study_0.jpg",
+    "title": "What do you want to study?"
+  },
+  "studyQuiz": {
+    "highlightedText": "Not sure what to major in? We\u2019ve got you.",
+    "bodyText": "Pick the most appealing photos in this quiz and we\u2019ll give you three majors and three career options you might like.",
+    "linkText": "me3 quiz",
+    "linkSuffix": "to explore degrees",
+    "linkHref": "#"
+  },
+  "liveLearnHero": {
+    "backgroundImage": "https://yourfuture.asu.edu/sites/default/files/2024-03/barrett.jpg",
+    "title": "Where do you want to live and learn?"
+  },
+  "networkQuiz": {
+    "bodyText": "Knowing what kind of student you're likely to be can help you figure out what you should look for in a college. Are you a Trailblazer? A Deep Diver? Find out.",
+    "linkLabel": "Take the experience quiz",
+    "linkHref": "#"
+  },
+  "payingForCollege": {
+    "heading": "Paying for College",
+    "description": "Knock out each of the tasks below to get the most financial aid possible.",
+    "accolade": {
+      "imageUrl": "https://yourfuture.asu.edu/sites/g/files/litvpz3146/files/inline-images/bestvalue-2024-verticle.png",
+      "alt": "ASU named a Best Value College - The Princeton Review, 2024"
+    },
+    "cards": [
+      {
+        "icon": "fas fa-award",
+        "title": "Aim for a New American University Scholarship",
+        "titleHref": "#",
+        "description": "All admitted ASU students are considered for a scholarship of up to $86,000 over four years."
+      },
+      {
+        "icon": "fas fa-search",
+        "title": "Cruise ASU\u2019s ScholarshipUniverse",
+        "titleHref": "#",
+        "description": "After you've applied, search and apply for thousands of scholarships all in one place."
+      },
+      {
+        "icon": "fas fa-mouse-pointer",
+        "title": "Send in your FAFSA",
+        "titleHref": "#",
+        "description": "Fill out the Free Application for Federal Student Aid and see how much you qualify for in federal dollars."
+      }
+    ]
+  },
+  "howWeHelp": {
+    "heading": "How can we help?",
+    "description": "ASU has representatives that can talk through any questions you have about what makes ASU different and help you find your fit.",
+    "button": {
+      "label": "Talk to your dedicated rep",
+      "href": "#"
+    }
+  },
+  "footer": {
+    "contact": null,
+    "social": null
+  }
+}

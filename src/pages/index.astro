@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import rawContent from '../data/page-content.json';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import HeroSection from '../components/HeroSection';
+import RankingsSection from '../components/RankingsSection';
+import TopoSection from '../components/TopoSection';
+import StudyHeroSection from '../components/StudyHeroSection';
+import StudyQuizSection from '../components/StudyQuizSection';
+import LiveLearnHeroSection from '../components/LiveLearnHeroSection';
+import NetworkQuizSection from '../components/NetworkQuizSection';
+import PayingForCollegeSection from '../components/PayingForCollegeSection';
+import HowCanWeHelpSection from '../components/HowCanWeHelpSection';
+
+// Cast to any to avoid TypeScript inferring narrow types from JSON arrays
+const content = rawContent as any;
+---
+
+<Layout title={content.meta.title}>
+  <Header
+    client:only="react"
+    siteTitle={content.nav.siteTitle}
+    parentOrg={content.nav.parentOrg}
+    parentOrgUrl={content.nav.parentOrgUrl}
+    navItems={content.nav.items}
+    logoSrc={content.nav.logo.src}
+    logoAlt={content.nav.logo.alt}
+    logoHref={content.nav.logo.href}
+    logoMobileSrc={content.nav.logo.mobileSrc}
+  />
+
+  <main>
+    <HeroSection
+      client:only="react"
+      backgroundImage={content.hero.backgroundImage}
+      title={content.hero.title}
+      subtitle={content.hero.subtitle}
+      buttons={content.hero.buttons}
+    />
+
+    <RankingsSection
+      client:only="react"
+      rankings={content.rankings}
+    />
+
+    <TopoSection
+      client:only="react"
+      highlightedText={content.topoSection.highlightedText}
+      remainingText={content.topoSection.remainingText}
+      subtext={content.topoSection.subtext}
+    />
+
+    <StudyHeroSection
+      client:only="react"
+      backgroundImage={content.studyHero.backgroundImage}
+      title={content.studyHero.title}
+    />
+
+    <StudyQuizSection
+      client:only="react"
+      highlightedText={content.studyQuiz.highlightedText}
+      bodyText={content.studyQuiz.bodyText}
+      linkText={content.studyQuiz.linkText}
+      linkSuffix={content.studyQuiz.linkSuffix}
+      linkHref={content.studyQuiz.linkHref}
+    />
+
+    <LiveLearnHeroSection
+      client:only="react"
+      backgroundImage={content.liveLearnHero.backgroundImage}
+      title={content.liveLearnHero.title}
+    />
+
+    <NetworkQuizSection
+      client:only="react"
+      bodyText={content.networkQuiz.bodyText}
+      linkLabel={content.networkQuiz.linkLabel}
+      linkHref={content.networkQuiz.linkHref}
+    />
+
+    <PayingForCollegeSection
+      client:only="react"
+      heading={content.payingForCollege.heading}
+      description={content.payingForCollege.description}
+      accolade={content.payingForCollege.accolade}
+      cards={content.payingForCollege.cards}
+    />
+
+    <HowCanWeHelpSection
+      client:only="react"
+      heading={content.howWeHelp.heading}
+      description={content.howWeHelp.description}
+      button={content.howWeHelp.button}
+    />
+  </main>
+
+  <Footer
+    client:only="react"
+    contact={content.footer.contact}
+    social={content.footer.social}
+  />
+</Layout>
