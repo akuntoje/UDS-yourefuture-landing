@@ -12,6 +12,7 @@ import LiveLearnHeroSection from '../components/LiveLearnHeroSection';
 import NetworkQuizSection from '../components/NetworkQuizSection';
 import PayingForCollegeSection from '../components/PayingForCollegeSection';
 import HowCanWeHelpSection from '../components/HowCanWeHelpSection';
+import RfiSection from '../components/RfiSection';
 
 // Cast to any to avoid TypeScript inferring narrow types from JSON arrays
 const content = rawContent as any;
@@ -92,6 +93,20 @@ const content = rawContent as any;
       heading={content.howWeHelp.heading}
       description={content.howWeHelp.description}
       button={content.howWeHelp.button}
+    />
+
+    <RfiSection
+      client:only="react"
+      heading={content.rfi.heading}
+      description={content.rfi.description}
+      campus={content.rfi.campus}
+      studentType={content.rfi.studentType}
+      variant={content.rfi.variant}
+      country={content.rfi.country}
+      stateProvince={content.rfi.stateProvince}
+      successMsg={content.rfi.successMsg}
+      test={content.rfi.test}
+      submissionUrl={content.rfi.submissionUrl}
     />
   </main>
 

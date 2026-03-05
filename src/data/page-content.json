@@ -19,8 +19,16 @@
     "title": "An incredible experience awaits you at ASU",
     "subtitle": "Design a personalized college experience",
     "buttons": [
-      { "label": "Request info", "href": "#", "color": "gold" },
-      { "label": "Apply", "href": "#", "color": "gold" }
+      {
+        "label": "Request info",
+        "href": "#",
+        "color": "gold"
+      },
+      {
+        "label": "Apply",
+        "href": "#",
+        "color": "gold"
+      }
     ]
   },
   "rankings": [
@@ -101,6 +109,18 @@
       "label": "Talk to your dedicated rep",
       "href": "#"
     }
+  },
+  "rfi": {
+    "heading": "Request information",
+    "description": "Fill out the form below and an ASU enrollment specialist will contact you with more information.",
+    "campus": "NOPREF",
+    "studentType": "undergrad",
+    "variant": "rfiVariant1",
+    "country": "US",
+    "stateProvince": "Arizona",
+    "successMsg": "Thank you for your interest in ASU! We'll be in touch soon.",
+    "test": false,
+    "submissionUrl": "https://httpbin.org/post"
   },
   "footer": {
     "contact": null,

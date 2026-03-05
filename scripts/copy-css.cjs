@@ -50,4 +50,29 @@ try {
   console.warn(`Skipped (not found): ${jsSrc}`);
 }
 
+// Copy @asu/app-rfi image asset
+const rfiImgSrc = path.join(
+  "node_modules",
+  "@asu",
+  "app-rfi",
+  "dist",
+  "assets",
+  "img",
+  "WS2-DefaultImagev01-Final.png"
+);
+const rfiImgDest = path.join(
+  "public",
+  "app-rfi",
+  "assets",
+  "img",
+  "WS2-DefaultImagev01-Final.png"
+);
+fs.mkdirSync(path.dirname(rfiImgDest), { recursive: true });
+try {
+  fs.copyFileSync(rfiImgSrc, rfiImgDest);
+  console.log(`Copied: ${rfiImgDest}`);
+} catch {
+  console.warn(`Skipped (not found): ${rfiImgSrc}`);
+}
+
 console.log("Done.");
